@@ -6,6 +6,7 @@ class QuestionMailer < ActionMailer::Base
     subject       options[:subject]
     sent_on       Time.now
     body          options[:body]
+    headers["Content-Type"] = "text/html; charset=UTF-8"
   end
 
 end
