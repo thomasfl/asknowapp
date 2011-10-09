@@ -3,38 +3,13 @@ class QuestionMailer < ActionMailer::Base
 
   ActionMailer::Base.smtp_settings = {
     :address => 'smtp.gmail.com',
+    :enable_starttls_auto => true,
     :port => 587,
-    :tls => true,
     :domain => 'mail.google.com',  # mail.customdomain.com if you use google apps
     :authentication => :plain,
     :user_name => 'asknowmail@gmail.com',  # make sure you include the full email address
     :password => 'AskNow4Me'
-
-#     :tls => true,
-#     :address => "smtp.gmail.com",
-#     :port => "587",
-#     :domain => "YOURDOMAIN",
-#     :authentication => :plain,
-#     :user_name => "GOOGLEUSERNAME",
-#     :password => "GOOGLEPASSWORD"
   }
-
-  # require 'tlsmail'
-
-#   Net::SMTP.enable_tls(OpenSSL::SSL::VERIFY_NONE)
-#   #ActionMailer::Base.raise_delivery_errors = true
-#   #ActionMailer::Base.perform_deliveries = true
-#   ActionMailer::Base.delivery_method = :smtp
-#   # ActionMailer::Base.default_content_type = "text/html"
-#   ActionMailer::Base.smtp_settings = {
-#     :address => 'smtp.gmail.com',
-#     :port => 587,
-#     :tls => true,
-#     :domain => 'mail.google.com',  # mail.customdomain.com if you use google apps
-#     :authentication => :plain,
-#     :user_name => 'asknowmail@gmail.com',  # make sure you include the full email address
-#     :password => 'AskNow4Me'
-#   }
 
   def spikemail()
     recipients    "thomasfl@usit.uio.no"
