@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Socialtomatoes::Application.load_tasks
+Asknow::Application.load_tasks
