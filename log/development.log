@@ -5635,3 +5635,100 @@ Served asset /users.js - 304 Not Modified (1ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-09 19:17:26 +0200
 Served asset /application.js - 304 Not Modified (0ms)
+DEPRECATION WARNING: recipients(value) is deprecated. Please pass :to as hash key to mail() instead. (called from spikemail at /Users/thomasfl/workspace/asknowapp/app/models/question_mailer.rb:22)
+DEPRECATION WARNING: subject(value) is deprecated. Please pass :subject as hash key to mail() instead. (called from spikemail at /Users/thomasfl/workspace/asknowapp/app/models/question_mailer.rb:23)
+DEPRECATION WARNING: sent_on(value) is deprecated. Please pass :date as hash key to mail() instead. (called from spikemail at /Users/thomasfl/workspace/asknowapp/app/models/question_mailer.rb:24)
+DEPRECATION WARNING: body(value) is deprecated. Please pass :body as hash key to mail() instead. (called from spikemail at /Users/thomasfl/workspace/asknowapp/app/models/question_mailer.rb:25)
+DEPRECATION WARNING: charset() is deprecated and will be removed in future versions. (called from irb_binding at (irb):1)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to SorceryCore (20110915205652)
+Migrating to SorceryRememberMe (20110915205653)
+Migrating to DropUsername (20110915211607)
+Migrating to CreateQuestions (20111009084230)
+Migrating to CreateRecipients (20111009125756)
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("questions")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("recipients")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_remember_me_token')[0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to SorceryCore (20110915205652)
+Migrating to SorceryRememberMe (20110915205653)
+Migrating to DropUsername (20110915211607)
+Migrating to CreateQuestions (20111009084230)
+Migrating to CreateRecipients (20111009125756)
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("questions")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("recipients")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_remember_me_token')[0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to SorceryCore (20110915205652)
+Migrating to SorceryRememberMe (20110915205653)
+Migrating to DropUsername (20110915211607)
+Migrating to CreateQuestions (20111009084230)
+Migrating to CreateRecipients (20111009125756)
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("questions")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("recipients")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_remember_me_token')[0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to SorceryCore (20110915205652)
+Migrating to SorceryRememberMe (20110915205653)
+Migrating to DropUsername (20110915211607)
+Migrating to CreateQuestions (20111009084230)
+Migrating to CreateRecipients (20111009125756)
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("questions")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("recipients")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_remember_me_token')[0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to SorceryCore (20110915205652)
+Migrating to SorceryRememberMe (20110915205653)
+Migrating to DropUsername (20110915211607)
+Migrating to CreateQuestions (20111009084230)
+Migrating to CreateRecipients (20111009125756)
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("questions")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("recipients")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_remember_me_token')[0m
+DEPRECATION WARNING: recipients(value) is deprecated. Please pass :to as hash key to mail() instead. (called from spikemail at /Users/thomasfl/workspace/asknowapp/app/models/question_mailer.rb:22)
+DEPRECATION WARNING: subject(value) is deprecated. Please pass :subject as hash key to mail() instead. (called from spikemail at /Users/thomasfl/workspace/asknowapp/app/models/question_mailer.rb:23)
+DEPRECATION WARNING: sent_on(value) is deprecated. Please pass :date as hash key to mail() instead. (called from spikemail at /Users/thomasfl/workspace/asknowapp/app/models/question_mailer.rb:24)
+DEPRECATION WARNING: body(value) is deprecated. Please pass :body as hash key to mail() instead. (called from spikemail at /Users/thomasfl/workspace/asknowapp/app/models/question_mailer.rb:25)
+DEPRECATION WARNING: charset() is deprecated and will be removed in future versions. (called from irb_binding at (irb):2)
+DEPRECATION WARNING: recipients(value) is deprecated. Please pass :to as hash key to mail() instead. (called from spikemail at /Users/thomasfl/workspace/asknowapp/app/models/question_mailer.rb:22)
+DEPRECATION WARNING: subject(value) is deprecated. Please pass :subject as hash key to mail() instead. (called from spikemail at /Users/thomasfl/workspace/asknowapp/app/models/question_mailer.rb:23)
+DEPRECATION WARNING: sent_on(value) is deprecated. Please pass :date as hash key to mail() instead. (called from spikemail at /Users/thomasfl/workspace/asknowapp/app/models/question_mailer.rb:24)
+DEPRECATION WARNING: body(value) is deprecated. Please pass :body as hash key to mail() instead. (called from spikemail at /Users/thomasfl/workspace/asknowapp/app/models/question_mailer.rb:25)
+DEPRECATION WARNING: charset() is deprecated and will be removed in future versions. (called from irb_binding at (irb):1)
+DEPRECATION WARNING: recipients(value) is deprecated. Please pass :to as hash key to mail() instead. (called from deliver_html_email at /Users/thomasfl/workspace/asknowapp/app/models/question_mailer.rb:47)
+DEPRECATION WARNING: subject(value) is deprecated. Please pass :subject as hash key to mail() instead. (called from deliver_html_email at /Users/thomasfl/workspace/asknowapp/app/models/question_mailer.rb:48)
+DEPRECATION WARNING: sent_on(value) is deprecated. Please pass :date as hash key to mail() instead. (called from deliver_html_email at /Users/thomasfl/workspace/asknowapp/app/models/question_mailer.rb:49)
+DEPRECATION WARNING: body(value) is deprecated. Please pass :body as hash key to mail() instead. (called from deliver_html_email at /Users/thomasfl/workspace/asknowapp/app/models/question_mailer.rb:50)
+DEPRECATION WARNING: charset() is deprecated and will be removed in future versions. (called from irb_binding at (irb):1)
+DEPRECATION WARNING: recipients(value) is deprecated. Please pass :to as hash key to mail() instead. (called from deliver_html_email at /Users/thomasfl/workspace/asknowapp/app/models/question_mailer.rb:47)
+DEPRECATION WARNING: subject(value) is deprecated. Please pass :subject as hash key to mail() instead. (called from deliver_html_email at /Users/thomasfl/workspace/asknowapp/app/models/question_mailer.rb:48)
+DEPRECATION WARNING: sent_on(value) is deprecated. Please pass :date as hash key to mail() instead. (called from deliver_html_email at /Users/thomasfl/workspace/asknowapp/app/models/question_mailer.rb:49)
+DEPRECATION WARNING: body(value) is deprecated. Please pass :body as hash key to mail() instead. (called from deliver_html_email at /Users/thomasfl/workspace/asknowapp/app/models/question_mailer.rb:50)
+DEPRECATION WARNING: charset() is deprecated and will be removed in future versions. (called from irb_binding at (irb):2)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to SorceryCore (20110915205652)
+Migrating to SorceryRememberMe (20110915205653)
+Migrating to DropUsername (20110915211607)
+Migrating to CreateQuestions (20111009084230)
+Migrating to CreateRecipients (20111009125756)
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("questions")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("recipients")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_remember_me_token')[0m
