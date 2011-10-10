@@ -39,3 +39,20 @@ group :test do
   # Pretty printed test output
   gem 'turn', :require => false
 end
+
+group :test, :development do
+  gem 'rspec-rails'
+  gem 'shoulda'
+  gem 'factory_girl_rails'
+  # gem 'spork'
+end
+
+group :cucumber do
+ # gem 'capybara'           # better than webrat
+  gem 'database_cleaner'   # clean database between tests
+ # gem 'cucumber-rails'
+ # gem 'cucumber'
+  gem 'rspec-rails'
+ # gem 'spork'
+  gem 'factory_girl_rails'
+end
