@@ -2,10 +2,11 @@ require 'spec_helper'
 
 describe Question do
   it "can be instantiated" do
-    Question.new.should be_an_instance_of(Question)
+    Factory(:question).should be_an_instance_of(Question)
   end
 
-  it "cannot save empty question" do
-    Question.new.should_not be_valid
+  it "should require a description" do
+  	Question.new.should validate_presence_of(:description)
   end
+
 end
