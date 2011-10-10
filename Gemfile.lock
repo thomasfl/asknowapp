@@ -142,6 +142,7 @@ GEM
     uglifier (1.0.3)
       execjs (>= 0.3.0)
       multi_json (>= 1.0.2)
+    watchr (0.7)
 
 PLATFORMS
   ruby
@@ -160,3 +161,4 @@ DEPENDENCIES
   sqlite3
   turn
   uglifier
+  watchr
