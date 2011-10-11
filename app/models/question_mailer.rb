@@ -18,4 +18,5 @@ class QuestionMailer < ActionMailer::Base
     body          options[:body]
   end
 
+
 end
