@@ -11,13 +11,6 @@ class QuestionMailer < ActionMailer::Base
     :password => 'AskNow4Me'
   }
 
-  def spikemail()
-    recipients    "thomasfl@usit.uio.no"
-    subject       "Mer spike overskrift 2"
-    sent_on       Time.now
-    body          "This is the body sendt from rails"
-  end
-
   def deliver_html_email(options)
     recipients    options[:recipient]
     subject       options[:subject]
