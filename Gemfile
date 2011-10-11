@@ -45,6 +45,8 @@ group :test, :development do
   gem 'shoulda'
   gem 'factory_girl_rails'
   gem 'watchr'
+  gem 'ZenTest'
+  gem 'autotest-rails'
   # gem 'spork'
 end
 
