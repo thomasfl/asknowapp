@@ -2,14 +2,14 @@
 class QuestionMailer < ActionMailer::Base
 
   ActionMailer::Base.smtp_settings = {
-    :address => 'smtp.gmail.com',
-    :enable_starttls_auto => true,
-    :port => 587,
-    :domain => 'mail.google.com',  # mail.customdomain.com if you use google apps
+    :address        => 'smtp.sendgrid.net',
+    :port           => '587',
     :authentication => :plain,
-    :user_name => 'asknowmail@gmail.com',  # make sure you include the full email address
-    :password => 'AskNow4Me'
+    :user_name      => ENV['SENDGRID_USERNAME'],
+    :password       => ENV['SENDGRID_PASSWORD'],
+    :domain         => 'heroku.com'
   }
+  ActionMailer::Base.delivery_method = :smtp
 
   def deliver_html_email(options)
     recipients    options[:recipient]
