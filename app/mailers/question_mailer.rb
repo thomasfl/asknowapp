@@ -1,19 +1,13 @@
 class QuestionMailer < ActionMailer::Base
   default from: "from@example.com"
 
-
-ActionMailer::Base.smtp_settings = {
-  :address        => 'smtp.sendgrid.net',
-  :port           => '587',
-  :authentication => :plain,
-  :user_name      => ENV['SENDGRID_USERNAME'],
-  :password       => ENV['SENDGRID_PASSWORD'],
-  :domain         => 'heroku.com'
-}
-ActionMailer::Base.delivery_method = :smtp
+  def ask_not_working
+    mail(:to => 'thomas.flemming@gmail.com', :subject => "Welcome to My Awesome Site")
+  end
 
   def ask
-    mail(:to => 'thomas.flemming@gmail.com', :subject => "Welcome to My Awesome Site")
+    Pony.mail(:to => 'thomas.flemming@gmail.com', :subject => "Welcome from pony",
+              :html_body => '<h1>Hello there!</h1>', :body => "In case you can't read html, Hello there.")
   end
 
 end
