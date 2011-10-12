@@ -16,6 +16,7 @@ class QuestionMailer < ActionMailer::Base
     subject       options[:subject]
     sent_on       Time.now
     body          options[:body]
+    mail(:to => options[:recipient], :subject => options[:subject], :body => options[:body])
   end
 
 
