@@ -10,12 +10,4 @@ class QuestionMailer < ActionMailer::Base
               :body => "In case you can't read html, Hello there.")
   end
 
-  # This is the standard method of doing email, but I haven't got it working. -TF
-  def ask_standard
-    mail(:to => 'thomas.flemming@gmail.com',
-         :from => 'asknow@goasknow.com',
-         :subject => "Welcome to My Awesome Site")
-
-  end
-
 end
