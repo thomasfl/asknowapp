@@ -47,6 +47,7 @@ group :test, :development do
   gem 'watchr'
   gem 'ZenTest'
   gem 'autotest-rails'
+  gem "autotest-growl"
   # gem 'spork'
 end
 

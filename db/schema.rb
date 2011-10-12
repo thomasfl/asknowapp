@@ -11,7 +11,37 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111009125756) do
+ActiveRecord::Schema.define(:version => 20111012230600) do
+
+  create_table "answer", :id => false, :force => true do |t|
+    t.string   "guid",              :null => false
+    t.string   "recipient_email",   :null => false
+    t.integer  "user_id"
+    t.integer  "question_owner_id", :null => false
+    t.boolean  "is_pending"
+    t.string   "answer"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "answers", :id => false, :force => true do |t|
+    t.string   "guid",              :null => false
+    t.string   "recipient_email",   :null => false
+    t.integer  "user_id"
+    t.integer  "question_owner_id", :null => false
+    t.boolean  "is_pending"
+    t.string   "answer"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "authentications", :force => true do |t|
+    t.integer  "user_id",    :null => false
+    t.string   "provider",   :null => false
+    t.string   "uid",        :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "questions", :force => true do |t|
     t.string   "description"
