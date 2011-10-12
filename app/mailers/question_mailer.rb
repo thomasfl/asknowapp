@@ -5,9 +5,17 @@ class QuestionMailer < ActionMailer::Base
     mail(:to => 'thomas.flemming@gmail.com', :subject => "Welcome to My Awesome Site")
   end
 
-  def ask
+  def ask_to
     Pony.mail(:to => 'thomas.flemming@gmail.com', :subject => "Welcome from pony",
               :html_body => '<h1>Hello there!</h1>', :body => "In case you can't read html, Hello there.")
+  end
+
+  def ask
+    mail(:to => 'thomas.flemming@gmail.com',
+         :from => 'asknow@goasknow.com',
+         :subject => "Welcome to My Awesome Site")
+    puts "Spike"
+    render "ask"
   end
 
 end
