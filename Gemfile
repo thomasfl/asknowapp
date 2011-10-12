@@ -18,6 +18,7 @@ end
 # General gems
 gem 'sorcery'  # authentication
 # gem 'tlsmail'  # so we can use gmail to send emails
+gem 'pony'
 
 # Gems used only for assets and not required
 # in production environments by default.
