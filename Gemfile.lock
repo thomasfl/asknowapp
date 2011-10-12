@@ -159,6 +159,7 @@ DEPENDENCIES
   database_cleaner
   factory_girl_rails
   jquery-rails
+  mail
   pg
   pony
   rails (= 3.1.0)
