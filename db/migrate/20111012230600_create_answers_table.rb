@@ -12,6 +12,6 @@ class CreateAnswersTable < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :answer
+    drop_table :answers
   end
 end
