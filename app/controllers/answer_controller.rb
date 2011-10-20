@@ -1,7 +1,7 @@
 class AnswerController < ApplicationController
 
-	def show id
-		1
-	end
+  def show id
+    2
+  end
 
 end
