@@ -11,18 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111015112259) do
-
-  create_table "answer", :id => false, :force => true do |t|
-    t.string   "guid",              :null => false
-    t.string   "recipient_email",   :null => false
-    t.integer  "user_id"
-    t.integer  "question_owner_id", :null => false
-    t.boolean  "is_pending"
-    t.string   "answer"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(:version => 20111022204533) do
 
   create_table "answers", :id => false, :force => true do |t|
     t.string   "guid",              :null => false
@@ -34,7 +23,12 @@ ActiveRecord::Schema.define(:version => 20111015112259) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "question_id"
+    t.string   "secret_key"
+    t.integer  "value"
   end
+
+  add_index "answers", ["question_id"], :name => "index_answers_on_question_id"
+  add_index "answers", ["secret_key"], :name => "index_answers_on_secret_key"
 
   create_table "authentications", :force => true do |t|
     t.integer  "user_id",    :null => false

@@ -19,6 +19,8 @@ end
 gem 'sorcery'  # authentication
 # gem 'tlsmail'  # so we can use gmail to send emails
 gem 'pony'
+gem 'pry'
+
 # gem 'mail'
 
 # Gems used only for assets and not required

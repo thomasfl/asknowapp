@@ -4,10 +4,13 @@
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
   </head>
   <body>
-    <h1>AskNow</h1>
+    <h1><%= @question.description %></h1>
     <p>
-      Get instant feedback.
+      <a href="<%= @yes_url %>">Yes</a> <a href="<%= @no_url %>">No</a>
     </p>
-    <p>Thanks for joining and have a great day!</p>
+    <p>
+      <%= @question.user.email %> wants you to answer to this question.
+    </p>
+    <p>Delivered by AskNow.</p>
   </body>
 </html>
